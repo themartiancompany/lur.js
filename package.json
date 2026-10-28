@@ -4,7 +4,7 @@
   "version":
     "0.0.1",
   "description":
-    "Fallback User Repository (fur).",
+    "Local User Repository (lur).",
   "funding": {
     "type":
       "patreon",
@@ -22,28 +22,31 @@
     "eslint.config.mjs",
     "fs-worker.webpack.config.cjs",
     "serve.json",
-    "libfur",
-    "libfur.webpack.config.cjs",
+    "liblur",
+    "liblur.webpack.config.cjs",
     "package.json",
     "webpack.config.cjs"
   ],
   "keywords": [
-    "ur",
     "fur",
+    "ur",
+    "gur",
+    "lur",
+    "life",
     "themartiancompany",
     "dogeos"
   ],
   "homepage":
-    "https://github.com/themartiancompany/fur",
+    "https://github.com/themartiancompany/lur",
   "bugs": {
     "url":
-      "https://github.com/themartiancompany/fur/issues"
+      "https://github.com/themartiancompany/lur/issues"
   },
   "repository": {
     "type":
       "git",
     "url":
-      "git+https://github.com/themartiancompany/fur.git"
+      "git+https://github.com/themartiancompany/lur.git"
   },
   "license":
     "AGPL-3.0-or-later",
@@ -57,7 +60,7 @@
   },
   "devDependencies": {
     "crash-js-webpack":
-      "^0.0.78",
+      "^0.0.79",
     "eslint":
       "^10.9.0",
     "globals":
@@ -76,16 +79,16 @@
       "npm:crash-js@^1000000000000013.1000000000000001.1000000000000001"
   },
   "overrides": {
-    "split":
-      "./fur"
+    "lur":
+      "./bash/lur"
   },
   "type":
     "module",
   "main":
-    "bash/fur",
+    "bash/lur",
   "bin":
-    { "fur":
-        "fur" },
+    { "lur":
+        "bash/lur" },
   "scripts": {
     "build-fs-worker":
       "npx webpack --mode 'production' --config 'fs-worker.webpack.config.cjs' --stats-error-details && cp 'fs-worker.js' 'dist/libtmcsplit' && cp 'fs-worker.js' 'dist/tmcsplit'",
