@@ -27,9 +27,9 @@
 _NPM ?= false
 SHELL ?= bash
 PREFIX ?= /usr/local
-_PROGRAM=fur
-_PROJECT_NPM=fur.js
-_PROJECT=$(_PROJECT_NPM)
+_PROGRAM=lur
+_PROJECT_NPM=local-user-repository
+_PROJECT=lur.js
 _NAMESPACE=themartiancompany
 DOC_DIR=$(DESTDIR)$(PREFIX)/share/doc/$(_PROJECT)
 USR_DIR=$(DESTDIR)$(PREFIX)
